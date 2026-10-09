@@ -1,0 +1,7 @@
+-keepattributes *Annotation*, InnerClasses, Signature
+-keep,includedescriptorclasses class co.edu.uis.cocinas.monitor.data.remote.**$$serializer { *; }
+-keepclassmembers class co.edu.uis.cocinas.monitor.data.remote.** { *** Companion; }
+-keepclasseswithmembers class co.edu.uis.cocinas.monitor.data.remote.** { kotlinx.serialization.KSerializer serializer(...); }
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**
